@@ -182,6 +182,9 @@ footer{
 .footer-column {
     width: 50%;
 }
+.social-links{
+    text-align: center;
+}
 .social-links a{
     margin-right: 25px;
 }
@@ -194,4 +197,38 @@ footer{
     background-color: #FFF;
     border: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 576px){
+    .header{
+        background-image: none;
+    }
+
+    nav ,nav>ul, .banner, .skills-container, .resume-container,
+    .about-info-container{
+        flex-direction: column;
+    }
+    nav>ul{
+        gap: 10px;
+    }
+    .banner .profile {
+        width: 100%;
+    }
+    .banner,
+    #what-i-do-description {
+        padding: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    footer, .about{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .contact input[type="text"],input[type="email"],textarea {
+        width: 80%;
+    }
 }
